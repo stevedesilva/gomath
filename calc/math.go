@@ -23,7 +23,7 @@ import "errors"
 func Add(numbers ...int) (int, error) {
 	sum := 0
 
-	if len(numbers) > 2 {
+	if len(numbers) < 2 {
 		return sum, errors.New("Provide more that 2 numbers")
 	}
 
